@@ -133,7 +133,7 @@ em { color: #7778a7; font-style: normal; }
 .hero-meta { position: absolute; left: 42px; right: 42px; bottom: 26px; display: flex; justify-content: space-between; color: #888593; font-size: 9px; letter-spacing: .12em; }
 .section-index { color: #777482; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 47px; }
 .section-title { font-weight: 500; font-size: clamp(40px, 4.5vw, 66px); line-height: 1.1; letter-spacing: -.055em; margin: 0; }
-.about { background: white; }
+.about { padding-top: 127px; padding-bottom: 127px; background: white; }
 .about-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 80px; }
 .about-copy { max-width: 560px; padding-top: 8px; }
 .about-copy p { color: var(--muted); line-height: 1.8; }
@@ -225,6 +225,7 @@ em { color: #7778a7; font-style: normal; }
 @media (max-width: 1050px) {
   .page-shell { width: calc(100% - 30px); margin: 15px auto; }
   .section { padding: 85px 28px; }
+  .about { padding-top: 98px; padding-bottom: 98px; }
   .hero { padding-top: 20px; }
   .portfolio-cover { min-height: 690px; }
   .folder-stage { margin-bottom: 45px; transform: translateX(-50%) scale(.86); transform-origin: bottom center; width: 980px; }
@@ -245,6 +246,7 @@ em { color: #7778a7; font-style: normal; }
   .collection-label { width: auto; padding: 4px 12px; font-size: 7px; white-space: nowrap; }
   .menu-button { width: 30px; height: 30px; }
   .section { padding: 75px 20px; }
+  .about { padding-top: 86px; padding-bottom: 86px; }
   .hero { min-height: calc(100svh - 70px); padding: 0; }
   .portfolio-cover { min-height: calc(100svh - 70px); }
   .cover-heading { padding-top: 56px; }
