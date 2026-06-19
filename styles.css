@@ -52,15 +52,56 @@ button { font: inherit; }
 .cover-heading h1 { margin: 0; font-size: clamp(110px, 13.7vw, 205px); line-height: .93; font-weight: 400; letter-spacing: -.075em; }
 .cover-heading p { margin: 18px 0 0; color: #605e65; font-size: 17px; letter-spacing: .08em; }
 .folder-stage { width: min(980px, 86vw); height: 470px; position: absolute; left: 50%; bottom: -55px; transform: translateX(-50%); }
-.folder { position: absolute; width: 405px; height: 270px; filter: drop-shadow(0 18px 22px rgba(27,24,55,.12)); transition: transform .45s cubic-bezier(.2,.8,.2,1); }
-.folder::before { content: ""; position: absolute; top: 0; left: 24px; width: 145px; height: 58px; border-radius: 30px 30px 0 0; background: inherit; }
-.folder-shape { position: absolute; inset: 34px 0 0; border: 12px solid rgba(255,255,255,.35); border-radius: 40px 40px 28px 28px; background: inherit; box-shadow: inset 0 6px 12px rgba(255,255,255,.25), inset 0 -10px 25px rgba(0,0,0,.08); }
-.folder > span { position: absolute; z-index: 4; top: 58px; right: 29px; font-size: 20px; color: rgba(255,255,255,.54); font-weight: 500; }
-.folder-orange { left: 1%; bottom: -75px; background: linear-gradient(145deg, #ff7d4d, #ff4e2f); transform: rotate(-17deg); }
-.folder-yellow { left: 17%; bottom: -54px; background: linear-gradient(145deg, #ffe67d, #f2b934); transform: rotate(-8deg); }
-.folder-gray { right: 16%; bottom: -48px; background: linear-gradient(145deg, #d5d2cd, #99928e); transform: rotate(7deg); }
-.folder-purple { z-index: 6; left: 31%; bottom: -52px; background: linear-gradient(145deg, #7776ff, #3e35ec 62%, #241ab4); transform: rotate(-2deg); }
-.folder-blue { z-index: 7; right: -3%; bottom: -78px; background: linear-gradient(145deg, #81d5ff, #289def 62%, #1474c9); transform: rotate(13deg); }
+.folder {
+  --folder-light: #7f98ff;
+  --folder-mid: #5c70f4;
+  --folder-dark: #4056dc;
+  position: absolute; width: 405px; height: 270px;
+  filter: drop-shadow(0 24px 24px rgba(27,24,55,.17));
+  transition: transform .45s cubic-bezier(.2,.8,.2,1);
+  isolation: isolate;
+}
+.folder::before {
+  content: ""; position: absolute; z-index: 1; inset: 0 7px 38px;
+  border-radius: 31px 38px 24px 24px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.24), transparent 26%),
+    linear-gradient(145deg, var(--folder-light), var(--folder-mid) 58%, var(--folder-dark));
+  clip-path: polygon(0 18%, 0 8%, 0 0, 38% 0, 44% 17%, 95% 17%, 100% 24%, 100% 100%, 0 100%);
+  box-shadow: inset 0 2px 2px rgba(255,255,255,.25), inset 0 -18px 30px rgba(20,18,70,.12);
+}
+.folder::after {
+  content: ""; position: absolute; z-index: 2; left: 31px; right: 24px; top: 55px; height: 145px;
+  border-radius: 22px 22px 11px 11px;
+  background:
+    repeating-linear-gradient(0deg, transparent 0 27px, rgba(72,73,97,.07) 28px 29px),
+    linear-gradient(155deg, #fff, #ececf3);
+  box-shadow: 0 -3px 8px rgba(47,45,85,.08), inset 0 1px 0 #fff;
+  transform: perspective(450px) rotateX(-4deg);
+}
+.folder-shape {
+  position: absolute; z-index: 3; left: 0; right: 0; bottom: 0; height: 188px;
+  border-radius: 34px 34px 36px 36px;
+  background:
+    radial-gradient(circle at 22% 7%, rgba(255,255,255,.26), transparent 27%),
+    linear-gradient(165deg, var(--folder-light) 0%, var(--folder-mid) 50%, var(--folder-dark) 100%);
+  box-shadow:
+    inset 0 2px 2px rgba(255,255,255,.42),
+    inset 0 -20px 35px rgba(20,18,85,.13),
+    0 -4px 12px rgba(42,40,100,.12);
+}
+.folder-shape::after {
+  content: ""; position: absolute; inset: 2px 7px auto; height: 48%;
+  border-radius: 30px 30px 55% 55%;
+  background: linear-gradient(180deg, rgba(255,255,255,.18), transparent);
+  pointer-events: none;
+}
+.folder > span { position: absolute; z-index: 4; top: 126px; right: 29px; font-size: 20px; color: rgba(255,255,255,.54); text-shadow: 0 1px 2px rgba(35,30,110,.12); font-weight: 500; }
+.folder-orange { --folder-light:#ff9873; --folder-mid:#ff6844; --folder-dark:#e84327; left: 1%; bottom: -75px; transform: rotate(-17deg); }
+.folder-yellow { --folder-light:#ffe88c; --folder-mid:#f5c94f; --folder-dark:#dca42d; left: 17%; bottom: -54px; transform: rotate(-8deg); }
+.folder-gray { --folder-light:#dedbd7; --folder-mid:#b7b1ad; --folder-dark:#8f8987; right: 16%; bottom: -48px; transform: rotate(7deg); }
+.folder-purple { --folder-light:#8588ff; --folder-mid:#5651ef; --folder-dark:#3025bd; z-index: 6; left: 31%; bottom: -52px; transform: rotate(-2deg); }
+.folder-blue { --folder-light:#83d5ff; --folder-mid:#39a9f1; --folder-dark:#1679c8; z-index: 7; right: -3%; bottom: -78px; transform: rotate(13deg); }
 .folder-stage:hover .folder-orange { transform: rotate(-20deg) translate(-15px,-10px); }
 .folder-stage:hover .folder-yellow { transform: rotate(-10deg) translate(-8px,-18px); }
 .folder-stage:hover .folder-gray { transform: rotate(9deg) translate(10px,-17px); }
