@@ -97,16 +97,16 @@ button { font: inherit; }
   pointer-events: none;
 }
 .folder > span { position: absolute; z-index: 5; top: 166px; right: 29px; font-size: 20px; color: rgba(255,255,255,.54); text-shadow: 0 1px 2px rgba(35,30,110,.12); font-weight: 500; }
-.folder-orange { --folder-light:#ff9873; --folder-mid:#ff6844; --folder-dark:#e84327; z-index: 3; left: -1%; bottom: -75px; transform: rotate(-15deg); }
-.folder-yellow { --folder-light:#ffe88c; --folder-mid:#f5c94f; --folder-dark:#dca42d; z-index: 4; left: 17%; bottom: -60px; transform: rotate(-8deg); }
-.folder-mint { --folder-light:#9ee7d2; --folder-mid:#54c8ae; --folder-dark:#21957f; z-index: 5; left: 34%; bottom: -50px; transform: rotate(-2deg); }
-.folder-purple { --folder-light:#8588ff; --folder-mid:#5651ef; --folder-dark:#3025bd; z-index: 6; left: 51%; bottom: -58px; transform: rotate(5deg); }
-.folder-blue { --folder-light:#83d5ff; --folder-mid:#39a9f1; --folder-dark:#1679c8; z-index: 7; right: -3%; bottom: -78px; transform: rotate(12deg); }
-.folder-stage:hover .folder-orange { transform: rotate(-18deg) translate(-15px,-10px); }
-.folder-stage:hover .folder-yellow { transform: rotate(-10deg) translate(-8px,-17px); }
-.folder-stage:hover .folder-mint { transform: rotate(-2deg) translateY(-20px); }
-.folder-stage:hover .folder-purple { transform: rotate(7deg) translate(8px,-17px); }
-.folder-stage:hover .folder-blue { transform: rotate(15deg) translate(15px,-10px); }
+.folder-orange { --folder-light:#ff9873; --folder-mid:#ff6844; --folder-dark:#e84327; z-index: 3; left: -2%; bottom: -76px; transform: rotate(-14deg); }
+.folder-yellow { --folder-light:#ffe88c; --folder-mid:#f5c94f; --folder-dark:#dca42d; z-index: 4; left: 14%; bottom: -59px; transform: rotate(-7deg); }
+.folder-mint { --folder-light:#9ee7d2; --folder-mid:#54c8ae; --folder-dark:#21957f; z-index: 5; left: 30%; bottom: -50px; transform: rotate(0deg); }
+.folder-purple { --folder-light:#8588ff; --folder-mid:#5651ef; --folder-dark:#3025bd; z-index: 6; left: 46%; bottom: -59px; transform: rotate(7deg); }
+.folder-blue { --folder-light:#83d5ff; --folder-mid:#39a9f1; --folder-dark:#1679c8; z-index: 7; left: 62%; bottom: -76px; transform: rotate(14deg); }
+.folder-stage:hover .folder-orange { transform: rotate(-17deg) translate(-14px,-10px); }
+.folder-stage:hover .folder-yellow { transform: rotate(-9deg) translate(-7px,-17px); }
+.folder-stage:hover .folder-mint { transform: translateY(-21px); }
+.folder-stage:hover .folder-purple { transform: rotate(9deg) translate(7px,-17px); }
+.folder-stage:hover .folder-blue { transform: rotate(17deg) translate(14px,-10px); }
 .project-sheet {
   position: absolute; z-index: 3; left: 50%; top: 2px; width: 338px; height: 218px;
   padding: 24px 27px; border-radius: 26px 26px 8px 8px;
