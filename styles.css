@@ -80,7 +80,7 @@ button { font: inherit; }
   transform: perspective(450px) rotateX(-4deg);
 }
 .folder-shape {
-  position: absolute; z-index: 3; left: 0; right: 0; bottom: 0; height: 188px;
+  position: absolute; z-index: 4; left: 0; right: 0; bottom: 0; height: 188px;
   border-radius: 34px 34px 36px 36px;
   background:
     radial-gradient(circle at 22% 7%, rgba(255,255,255,.26), transparent 27%),
@@ -96,7 +96,7 @@ button { font: inherit; }
   background: linear-gradient(180deg, rgba(255,255,255,.18), transparent);
   pointer-events: none;
 }
-.folder > span { position: absolute; z-index: 4; top: 126px; right: 29px; font-size: 20px; color: rgba(255,255,255,.54); text-shadow: 0 1px 2px rgba(35,30,110,.12); font-weight: 500; }
+.folder > span { position: absolute; z-index: 5; top: 126px; right: 29px; font-size: 20px; color: rgba(255,255,255,.54); text-shadow: 0 1px 2px rgba(35,30,110,.12); font-weight: 500; }
 .folder-orange { --folder-light:#ff9873; --folder-mid:#ff6844; --folder-dark:#e84327; left: 1%; bottom: -75px; transform: rotate(-17deg); }
 .folder-yellow { --folder-light:#ffe88c; --folder-mid:#f5c94f; --folder-dark:#dca42d; left: 17%; bottom: -54px; transform: rotate(-8deg); }
 .folder-gray { --folder-light:#dedbd7; --folder-mid:#b7b1ad; --folder-dark:#8f8987; right: 16%; bottom: -48px; transform: rotate(7deg); }
@@ -107,9 +107,17 @@ button { font: inherit; }
 .folder-stage:hover .folder-gray { transform: rotate(9deg) translate(10px,-17px); }
 .folder-stage:hover .folder-purple { transform: rotate(-1deg) translateY(-16px); }
 .folder-stage:hover .folder-blue { transform: rotate(15deg) translate(15px,-12px); }
-.project-sheet { position: absolute; z-index: 5; left: 42%; bottom: 182px; width: 220px; height: 205px; padding: 27px 24px; border-radius: 25px 25px 4px 4px; background: #f4f4f4; box-shadow: 0 18px 30px rgba(26,24,42,.1); transform: rotate(13deg); display: flex; flex-direction: column; }
-.project-sheet strong { font-size: 15px; margin-bottom: 20px; }
-.project-sheet span { padding: 11px 0; border-top: 1px solid #d8d7db; font-size: 10px; color: #77747d; }
+.project-sheet {
+  position: absolute; z-index: 3; left: 46px; top: 5px; width: 292px; height: 154px;
+  padding: 20px 22px; border-radius: 22px 22px 7px 7px;
+  background: linear-gradient(155deg, #fff, #f0f0f4);
+  box-shadow: 0 10px 22px rgba(26,24,42,.12), inset 0 1px 0 #fff;
+  display: flex; flex-direction: column;
+  transition: transform .45s cubic-bezier(.2,.8,.2,1);
+}
+.project-sheet strong { font-size: 12px; margin-bottom: 10px; letter-spacing: .02em; }
+.project-sheet small { padding: 6px 0; border-top: 1px solid #d8d7db; font-size: 8px; color: #77747d; }
+.folder-stage:hover .project-sheet { transform: translateY(-8px); }
 .cover-hint { position: absolute; z-index: 10; left: 50%; bottom: 88px; transform: translateX(-50%); color: rgba(255,255,255,.72); font-size: 10px; letter-spacing: .1em; white-space: nowrap; }
 .cover-hint span { margin-left: 8px; }
 .eyebrow { font-size: 10px; font-weight: 600; letter-spacing: .17em; display: flex; align-items: center; gap: 9px; }
