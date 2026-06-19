@@ -51,18 +51,18 @@ button { font: inherit; }
 .cover-heading { position: relative; z-index: 8; padding-top: 38px; text-align: center; }
 .cover-heading h1 { margin: 0; font-size: clamp(110px, 13.7vw, 205px); line-height: .93; font-weight: 400; letter-spacing: -.075em; }
 .cover-heading p { margin: 18px 0 0; color: #605e65; font-size: 17px; letter-spacing: .08em; }
-.folder-stage { width: min(980px, 86vw); height: 500px; position: absolute; left: 50%; bottom: -55px; margin-bottom: 95px; transform: translateX(-50%); }
+.folder-stage { width: min(980px, 86vw); height: 605px; position: absolute; left: 50%; bottom: -55px; margin-bottom: 95px; transform: translateX(-50%); }
 .folder {
   --folder-light: #7f98ff;
   --folder-mid: #5c70f4;
   --folder-dark: #4056dc;
-  position: absolute; width: 405px; height: 335px;
+  position: absolute; width: 405px; height: 419px;
   filter: drop-shadow(0 24px 24px rgba(27,24,55,.17));
   transition: transform .45s cubic-bezier(.2,.8,.2,1);
   isolation: isolate;
 }
 .folder::before {
-  content: ""; position: absolute; z-index: 1; inset: 0 7px 48px;
+  content: ""; position: absolute; z-index: 1; inset: 0 7px 60px;
   border-radius: 31px 38px 24px 24px;
   background:
     linear-gradient(180deg, rgba(255,255,255,.24), transparent 26%),
@@ -71,7 +71,7 @@ button { font: inherit; }
   box-shadow: inset 0 2px 2px rgba(255,255,255,.25), inset 0 -18px 30px rgba(20,18,70,.12);
 }
 .folder::after {
-  content: ""; position: absolute; z-index: 2; left: 31px; right: 24px; top: 64px; height: 192px;
+  content: ""; position: absolute; z-index: 2; left: 31px; right: 24px; top: 80px; height: 240px;
   border-radius: 22px 22px 11px 11px;
   background:
     repeating-linear-gradient(0deg, transparent 0 27px, rgba(72,73,97,.07) 28px 29px),
@@ -80,7 +80,7 @@ button { font: inherit; }
   transform: perspective(450px) rotateX(-4deg);
 }
 .folder-shape {
-  position: absolute; z-index: 4; left: 0; right: 0; bottom: 0; height: 232px;
+  position: absolute; z-index: 4; left: 0; right: 0; bottom: 0; height: 290px;
   border-radius: 34px 34px 36px 36px;
   background:
     radial-gradient(circle at 22% 7%, rgba(255,255,255,.26), transparent 27%),
@@ -96,7 +96,7 @@ button { font: inherit; }
   background: linear-gradient(180deg, rgba(255,255,255,.18), transparent);
   pointer-events: none;
 }
-.folder > span { position: absolute; z-index: 5; top: 166px; right: 29px; font-size: 20px; color: rgba(255,255,255,.54); text-shadow: 0 1px 2px rgba(35,30,110,.12); font-weight: 500; }
+.folder > span { position: absolute; z-index: 5; top: 208px; right: 29px; font-size: 20px; color: rgba(255,255,255,.54); text-shadow: 0 1px 2px rgba(35,30,110,.12); font-weight: 500; }
 .folder-orange { --folder-light:#ff9873; --folder-mid:#ff6844; --folder-dark:#e84327; z-index: 3; left: -2%; bottom: -76px; transform: rotate(-14deg); }
 .folder-yellow { --folder-light:#ffe88c; --folder-mid:#f5c94f; --folder-dark:#dca42d; z-index: 4; left: 14%; bottom: -59px; transform: rotate(-7deg); }
 .folder-mint { --folder-light:#9ee7d2; --folder-mid:#54c8ae; --folder-dark:#21957f; z-index: 5; left: 30%; bottom: -50px; transform: rotate(0deg); }
@@ -108,8 +108,8 @@ button { font: inherit; }
 .folder-stage:hover .folder-purple { transform: rotate(9deg) translate(7px,-17px); }
 .folder-stage:hover .folder-blue { transform: rotate(17deg) translate(14px,-10px); }
 .project-sheet {
-  position: absolute; z-index: 3; left: 50%; top: 2px; width: 338px; height: 218px;
-  padding: 24px 27px; border-radius: 26px 26px 8px 8px;
+  position: absolute; z-index: 3; left: 50%; top: 3px; width: 338px; height: 273px;
+  padding: 30px 27px; border-radius: 26px 26px 8px 8px;
   background: linear-gradient(155deg, #fff, #f0f0f4);
   box-shadow: 0 10px 22px rgba(26,24,42,.12), inset 0 1px 0 #fff;
   display: flex; flex-direction: column;
@@ -252,7 +252,7 @@ em { color: #7778a7; font-style: normal; }
   .cover-heading { padding-top: 56px; }
   .cover-heading h1 { font-size: clamp(74px, 24vw, 104px); }
   .cover-heading p { font-size: 12px; margin-top: 14px; }
-  .folder-stage { width: 980px; height: 500px; bottom: 0; margin-bottom: 0; transform: translateX(-50%) scale(.53); }
+  .folder-stage { width: 980px; height: 605px; bottom: 0; margin-bottom: 0; transform: translateX(-50%) scale(.53); }
   .about-grid { gap: 45px; }
   .section-title { font-size: 42px; }
   .about-copy .lead { font-size: 18px; }
