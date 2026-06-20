@@ -134,7 +134,7 @@ em { color: #7778a7; font-style: normal; }
 .section-index { color: #777482; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 47px; }
 .section-title { font-weight: 500; font-size: clamp(40px, 4.5vw, 66px); line-height: 1.1; letter-spacing: -.055em; margin: 0; }
 .about { padding-top: 168px; padding-bottom: 0; background: white; overflow: hidden; }
-.about-folder-visual { position: relative; z-index: 1; height: 570px; margin: 120px -42px 0; }
+.about-folder-visual { position: relative; z-index: 1; height: 570px; margin: 60px -42px 0; }
 .about-folder-visual .folder-stage { bottom: -55px; margin-bottom: 95px; }
 .about > .section-index,
 .about-grid { position: relative; z-index: 2; }
@@ -234,7 +234,7 @@ em { color: #7778a7; font-style: normal; }
   .portfolio-cover { min-height: 520px; }
   .folder-stage { margin-bottom: 45px; transform: translateX(-50%) scale(.86); transform-origin: bottom center; width: 980px; }
   .about { padding-top: 130px; padding-bottom: 0; }
-  .about-folder-visual { height: 500px; margin: 95px -28px 0; }
+  .about-folder-visual { height: 500px; margin: 52px -28px 0; }
   .about-folder-visual .folder-stage { bottom: -55px; margin-bottom: 45px; }
   .hero-meta { display: none; }
   .about-grid, .experience-layout { grid-template-columns: 1fr; }
@@ -260,7 +260,7 @@ em { color: #7778a7; font-style: normal; }
   .cover-heading h1 { font-size: clamp(74px, 24vw, 104px); }
   .cover-heading p { font-size: 12px; margin-top: 14px; }
   .folder-stage { width: 980px; height: 605px; bottom: 0; margin-bottom: 0; transform: translateX(-50%) scale(.53); }
-  .about-folder-visual { height: 330px; margin: 80px -20px 0; }
+  .about-folder-visual { height: 330px; margin: 44px -20px 0; }
   .about-folder-visual .folder-stage { bottom: -32px; margin-bottom: 0; }
   .about-grid { gap: 45px; }
   .section-title { font-size: 42px; }
