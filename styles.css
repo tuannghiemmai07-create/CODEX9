@@ -51,12 +51,14 @@ button { font: inherit; }
   display: flex; align-items: center; background: #fbfbfa; overflow: hidden;
 }
 .hero::before {
-  content: ""; position: absolute; inset: -12% 32% -15% -32%;
+  content: ""; position: absolute; top: -12%; bottom: -15%; left: -100%; width: 200%;
   background:
     radial-gradient(ellipse at 44% 12%, rgba(15,91,255,.88), transparent 33%),
     radial-gradient(ellipse at 18% 48%, rgba(29,196,255,.72), transparent 42%),
     radial-gradient(ellipse at 72% 47%, rgba(119,82,255,.55), transparent 42%),
     radial-gradient(ellipse at 48% 94%, rgba(81,104,255,.68), transparent 34%);
+  background-size: 50% 100%;
+  background-repeat: repeat-x;
   filter: blur(38px) saturate(130%);
   opacity: .92;
   will-change: transform;
@@ -79,8 +81,8 @@ button { font: inherit; }
 .cover-byline strong { font-weight: 600; }
 .cover-byline i { display: block; width: 2px; height: 24px; background: currentColor; }
 @keyframes heroGlowSlide {
-  from { transform: translate3d(-18%, 0, 0) scale(1.05); }
-  to { transform: translate3d(48%, 0, 0) scale(1.05); }
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(50%, 0, 0); }
 }
 .folder-stage { width: min(980px, 86vw); height: 605px; position: absolute; left: 50%; bottom: -55px; margin-bottom: 95px; transform: translateX(-50%); }
 .folder {
@@ -288,7 +290,7 @@ em { color: #7778a7; font-style: normal; }
   .about { padding-top: 114px; padding-bottom: 0; }
   .about-grid { margin-top: 0; margin-bottom: 0; }
   .hero { min-height: calc(100svh - 70px); padding: 0 20px; }
-  .hero::before { inset: -5% 24% 20% -32%; filter: blur(28px) saturate(125%); }
+  .hero::before { top: -5%; bottom: 20%; filter: blur(28px) saturate(125%); }
   .portfolio-cover { min-height: calc(100svh - 70px); }
   .cover-heading { width: 100%; margin: 0; padding: 0 0 5vh; }
   .cover-kicker { margin-bottom: 13px; font-size: 17px; }
