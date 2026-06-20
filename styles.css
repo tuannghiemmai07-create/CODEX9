@@ -60,7 +60,7 @@ button { font: inherit; }
   filter: blur(38px) saturate(130%);
   opacity: .92;
   will-change: transform;
-  animation: heroGlowSlide 12s ease-in-out infinite alternate;
+  animation: heroGlowSlide 5s cubic-bezier(.45, 0, .55, 1) infinite alternate;
 }
 .hero::after {
   content: ""; position: absolute; inset: 0;
@@ -79,8 +79,8 @@ button { font: inherit; }
 .cover-byline strong { font-weight: 600; }
 .cover-byline i { display: block; width: 2px; height: 24px; background: currentColor; }
 @keyframes heroGlowSlide {
-  from { transform: translate3d(-10%, 0, 0) scale(1.04); }
-  to { transform: translate3d(38%, 0, 0) scale(1.1); }
+  from { transform: translate3d(-10%, 0, 0) scale(1.05); }
+  to { transform: translate3d(38%, 0, 0) scale(1.05); }
 }
 .folder-stage { width: min(980px, 86vw); height: 605px; position: absolute; left: 50%; bottom: -55px; margin-bottom: 95px; transform: translateX(-50%); }
 .folder {
