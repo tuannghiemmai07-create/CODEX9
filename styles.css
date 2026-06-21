@@ -186,6 +186,7 @@ em { color: #7778a7; font-style: normal; }
 .profile-block h3 { margin: 0 0 25px; font-size: 28px; line-height: 1; letter-spacing: -.04em; }
 .profile-block strong, .profile-block span { display: block; }
 .profile-block strong { margin: 20px 0 8px; font-size: 13px; }
+.profile-main .profile-block { margin-top: 98px; }
 .profile-block span { color: var(--muted); font-size: 13px; line-height: 1.6; }
 .profile-side { padding-top: 45px; }
 .profile-side .profile-block:first-child { margin-top: 0; }
@@ -293,6 +294,7 @@ em { color: #7778a7; font-style: normal; }
   .profile-side { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 70px; padding-top: 0; }
   .profile-portrait { min-height: 520px; }
   .profile-contact { margin-left: 0; }
+  .profile-main .profile-block { margin-top: 78px; }
   .about-folder-visual { height: 500px; margin: 52px -28px 0; }
   .about-folder-visual .folder-stage { bottom: -55px; margin-bottom: 45px; }
   .experience-layout { grid-template-columns: 1fr; }
@@ -331,6 +333,7 @@ em { color: #7778a7; font-style: normal; }
   .section-title { font-size: 42px; }
   .about-copy .lead { font-size: 18px; }
   .timeline-item { grid-template-columns: 1fr 30px; gap: 10px 18px; padding: 25px 0; }
+  .profile-main .profile-block { margin-top: 56px; }
   .timeline-year { grid-column: 1; }
   .timeline-item > div:nth-child(2) { grid-column: 1; }
   .timeline-item > p { grid-column: 1; }
