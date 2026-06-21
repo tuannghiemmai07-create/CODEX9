@@ -70,14 +70,14 @@ button { font: inherit; }
   opacity: .13; mix-blend-mode: multiply; pointer-events: none;
 }
 .portfolio-cover { width: 100%; min-height: 620px; display: flex; align-items: center; position: relative; z-index: 2; }
-.cover-heading { width: min(900px, 76%); margin-left: 14%; padding-top: 25px; text-align: left; }
-.cover-kicker { margin: 0 0 8px; font-size: clamp(18px, 1.8vw, 28px); letter-spacing: -.035em; }
+.cover-heading { width: min(900px, 76%); margin: 0 auto; padding-top: 25px; text-align: left; }
+.cover-kicker { margin: 0 0 8px; text-align: left; font-size: clamp(18px, 1.8vw, 28px); letter-spacing: -.035em; }
 .cover-kicker strong { font-weight: 600; }
 .cover-heading h1 { display: flex; align-items: baseline; margin: 0; color: #050505; font-size: clamp(105px, 14.8vw, 220px); line-height: .78; font-weight: 700; letter-spacing: -.09em; }
 .cover-heading h1 span { font-weight: 700; }
 .cover-heading h1 em { color: inherit; font-style: italic; font-weight: 800; }
 .cover-heading h1 b { font-size: .63em; font-weight: 800; }
-.cover-byline { display: flex; align-items: center; justify-content: flex-end; gap: 13px; margin: 28px 183px 0 0; color: #26242a; font-size: clamp(16px, 1.6vw, 24px); letter-spacing: -.025em; }
+.cover-byline { display: flex; align-items: center; justify-content: flex-end; gap: 13px; margin: 28px 184px 0 0; color: #26242a; font-size: clamp(16px, 1.6vw, 24px); letter-spacing: -.025em; }
 .cover-byline strong { font-weight: 600; }
 .cover-byline i { display: block; width: 2px; height: 24px; background: currentColor; }
 @keyframes heroGlowSlide {
@@ -285,7 +285,7 @@ em { color: #7778a7; font-style: normal; }
   .about { padding-top: 130px; padding-bottom: 130px; }
   .hero { padding: 0 28px; }
   .portfolio-cover { min-height: 560px; }
-  .cover-heading { width: 88%; margin-left: 8%; }
+  .cover-heading { width: 88%; margin: 0 auto; }
   .cover-byline { justify-content: flex-start; margin: 28px 0 0 25%; }
   .folder-stage { margin-bottom: 45px; transform: translateX(-50%) scale(.86); transform-origin: bottom center; width: 980px; }
   .about { padding-top: 95px; padding-bottom: 0; }
