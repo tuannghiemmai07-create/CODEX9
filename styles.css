@@ -77,7 +77,7 @@ button { font: inherit; }
 .cover-heading h1 span { font-weight: 700; }
 .cover-heading h1 em { color: inherit; font-style: italic; font-weight: 800; }
 .cover-heading h1 b { font-size: .63em; font-weight: 800; }
-.cover-byline { display: flex; align-items: center; justify-content: flex-end; gap: 13px; margin: 28px 2% 0 0; color: #26242a; font-size: clamp(16px, 1.6vw, 24px); letter-spacing: -.025em; }
+.cover-byline { display: flex; align-items: center; justify-content: flex-end; gap: 13px; margin: 28px 183px 0 0; color: #26242a; font-size: clamp(16px, 1.6vw, 24px); letter-spacing: -.025em; }
 .cover-byline strong { font-weight: 600; }
 .cover-byline i { display: block; width: 2px; height: 24px; background: currentColor; }
 @keyframes heroGlowSlide {
@@ -286,7 +286,7 @@ em { color: #7778a7; font-style: normal; }
   .hero { padding: 0 28px; }
   .portfolio-cover { min-height: 560px; }
   .cover-heading { width: 88%; margin-left: 8%; }
-  .cover-byline { justify-content: flex-start; margin-left: 25%; }
+  .cover-byline { justify-content: flex-start; margin: 28px 0 0 25%; }
   .folder-stage { margin-bottom: 45px; transform: translateX(-50%) scale(.86); transform-origin: bottom center; width: 980px; }
   .about { padding-top: 95px; padding-bottom: 0; }
   .profile-intro { grid-template-columns: .8fr 1.2fr; }
