@@ -179,7 +179,6 @@ em { color: #7778a7; font-style: normal; }
 .portrait-monogram { position: absolute; z-index: 3; left: 50%; top: 44%; transform: translate(-50%,-50%); font-size: clamp(68px, 8vw, 116px); font-weight: 600; letter-spacing: -.08em; }
 .portrait-caption { position: absolute; z-index: 4; left: 28px; right: 28px; bottom: 25px; display: flex; justify-content: space-between; gap: 15px; font-size: 9px; letter-spacing: .12em; }
 .profile-main { padding-top: 6px; }
-.profile-index { color: #777482; font-size: 10px; letter-spacing: .1em; margin: 0 0 30px; }
 .profile-main h2 { margin: 0 0 18px; font-size: clamp(72px, 7vw, 108px); line-height: .85; letter-spacing: -.075em; }
 .profile-main > p { max-width: 610px; color: var(--muted); font-size: 15px; line-height: 1.75; }
 .profile-main .profile-lead { color: var(--ink); font-size: 19px; line-height: 1.55; }
